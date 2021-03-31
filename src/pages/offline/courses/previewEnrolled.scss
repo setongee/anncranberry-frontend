@@ -1,0 +1,209 @@
+.previewCourse{
+
+    margin-bottom: 50px;
+
+    .title-head{
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    .preview{
+
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        .card{
+            width: 370px;
+            height: 100%;
+            position: relative;
+            box-shadow: 0 3px 30px rgba($color: #000000, $alpha: 0.05);
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .img{
+                overflow: hidden;
+                height: 320px;
+                width: 100%;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                
+                video{
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    display: none;
+                }
+                
+                .play-btn{
+
+                    background-color: rgba($color: #000000, $alpha: .2);
+                    height: 120px;
+                    width: 120px;
+                    align-items: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 100%;
+                    transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+                    &:hover{
+                        height: 500px;
+                        width: 500px;
+                    }
+
+
+                    .controlBtn{
+
+                        height: 50px;
+                        width: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        color: #fff;
+                        transform: translate(-50%, -50%);
+                        cursor: pointer;
+
+                        &.pauseBtn{
+
+                            display: none;
+
+                        }
+
+                    }
+    
+                }
+            }
+
+
+            .studentsEnrolled{
+                font-size: 14px;
+            }
+
+            .studentsEnrolled{
+                color: #000;
+                background-color: #fff;
+            }
+
+            button{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                border: none;
+                width: 100%;
+                text-align: left;
+                padding: 20px;
+                font-size: 14px;
+                font-family: mulish;
+                font-weight: bold;
+                background: none;
+                outline: none;
+            }
+        }
+
+        .description{
+            background-color: #fff;
+            box-shadow: 0 3px 30px rgba($color: #000000, $alpha: 0.05);
+            width: 50%;
+            padding: 60px 80px;
+            position: relative;
+
+            .backToCourses{
+                text-transform: uppercase;
+                font-size: 14px;
+                display: flex;
+                margin-bottom: 40px;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .title{
+                font-size: 28px;
+                width: 90%;
+                font-weight: bold;
+            }
+
+            .fullSubtitle{
+                margin: 30px 0;
+                text-align: justify;
+                font-size: 16px;
+                color: #666;
+                line-height: 25px;
+            }
+
+            .what_to_learn{
+                list-style: none;
+                color: #333;
+
+                & li{
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 0;
+                    font-size: 14px;
+                    border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .pay_for_course{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 20px;
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.05);
+
+        &:hover {
+            background-color: #F7EBF3;
+        }
+    }
+
+    .clickMore {
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+        color:hotpink;
+
+        &:hover{
+            color: #666;
+        }
+    }
+
+    .more_info{
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gum {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 40px;
+        cursor: pointer;
+        transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}

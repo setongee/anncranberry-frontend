@@ -1,0 +1,89 @@
+.level_page{
+
+    .card_level_flex{
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .card_levels{
+        height: 420px;
+        width: 300px;
+        background-color: #fff;
+        box-shadow: 0px 3px 30px #00000008;
+        font-family: muli;
+        margin: 0 15px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    
+        .icon{
+            width: 90px;
+            height: 90px;
+            overflow: hidden;
+            position: relative;
+            background-color: hotpink;
+            border-radius: 100%;
+    
+            img{
+                width: 100%;
+            }
+        }
+    
+        .detail_holder{
+            padding: 0px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .level_title{
+                font-weight: bold;
+                font-size: 24px;
+                margin-bottom: 20px;
+                font-family: montserrat;
+                text-align: center;
+            }
+    
+            .level_description{
+                font-size: 14px;
+                line-height: 21px;
+                text-align: center;
+            }
+
+            button {
+                padding: 18px 60px;
+                width: 100%;
+                border: none;
+                border-radius: 100px;
+                font-family: montserrat;
+                text-transform: uppercase;
+                font-size: 11px;
+                font-weight: bold;
+                color: #fff;
+                margin-top: 10px;
+                cursor: pointer;
+                outline: none;
+                transition: all .3s ease-in-out;
+                margin-top: 30px;
+                background:none;
+                border: 1px solid #999;
+                color: #000;
+
+                &:hover{
+                    background-color: #9a0c79; 
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+}
+
+.level_head{
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0 60px 0;
+}

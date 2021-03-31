@@ -1,0 +1,139 @@
+.contain{
+    position: relative;
+    height: 100%;
+
+    .main {
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+
+        .photo{
+            width: 46.5%;
+            background-color: hotpink;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .main-text{
+            width: calc(100% - 46.5%);
+            position: relative;
+
+            .text{
+                position: absolute;
+                top: 21%;
+                padding: 0 50px;
+                left: 10%;
+
+                h1{
+                    font-size: 38px;
+                    margin-bottom: 50px;
+                }
+
+                p{
+                    text-transform: uppercase;
+                    width: 90%;
+                    font-size: 16px;
+                    line-height: 38px;
+                    color: #666;
+
+                }
+
+            }
+        }
+    }
+
+    .more-info{
+        padding: 0 80px;
+        
+        h1{
+            font-size: 21px;
+            margin: 70px 0;
+        }
+
+        .products{
+            
+            width: 660px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .product{
+                width: 310px;
+                height: 140px;
+                background-color: #F7EBF3;
+                position: relative;
+                margin-right: 10px;
+                margin-bottom: 10px;
+
+                .round-ball{
+                    width: 60px;
+                    height: 60px;
+                    background-color: #E60A9D;
+                    color: #fff;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 15px;
+                    position: absolute;
+                    font-weight: bold;
+                    right: 0;
+                }
+
+                p{
+                    position: absolute;
+                    bottom: 0;
+                    margin: 30px 20px;
+                    font-weight: bold;
+                    width: 70%;
+                }
+            }
+
+        }
+
+        
+        .holder{
+            position: absolute;
+            top: 40%;
+            right: 100px;
+            display: flex;
+            flex-direction: column;
+            height: 350px;
+
+            .photo-album{
+                width: 700px;
+                height: 800px;
+                display: flex;
+
+                .photo-image{
+                    height: 350px;
+                    width: 350px;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .content{
+                    height: 350px;
+                    width: 350px;
+                    background-color: #fff;
+                    padding: 40px;
+
+                    h1{
+                        font-size: 15px;
+                    }
+
+                    p{
+                        font-size: 15px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+
+    }
+}

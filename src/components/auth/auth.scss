@@ -1,0 +1,108 @@
+.user-auth_login {
+
+    height: 100vh;
+    background-color: #F8F3F6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .user-auth_form_body{
+
+        width: 550px;
+        padding: 0px 100px;
+
+        .user-auth_form_header{
+
+            margin-bottom: 50px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+
+            h1{
+                font-size: 38px;
+                margin-top: 20px;
+                margin-bottom: 5px;
+                letter-spacing: -0.5px;
+                font-weight: 100;
+                line-height: 43px;
+            }
+        }
+
+        .user-auth_form_container{
+
+            form{
+
+                .user-auth_input_area{
+                    display: flex;
+                    flex-direction: column;
+
+                    input{
+                        margin-bottom: 10px;
+                        padding: 25px;
+                        border: 1px solid #F8F3F6;
+                        background-color: #F1EDF0;
+                        border-radius: 100px;
+
+                        &:focus{
+                            border: 1px solid #e60a9d4f;
+                            outline: none;
+                        }
+                    }
+
+                    button{
+                        outline: none;
+                        border: none;
+                        padding: 25px;
+                        margin: 20px 0;
+                        margin-bottom: 20px;
+                        border-radius: 100px;
+                        font-weight: bold;
+                        background-color: #000;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .user-auth_main-site{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 12px;
+                margin: 10px 0;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .close_here{
+        margin-top: 0px;
+        border-radius: 100px;
+        font-size: 14px;
+        padding: 15px 40px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        p{
+            background-color: indianred;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+    }
+
+}

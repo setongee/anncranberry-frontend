@@ -1,0 +1,20 @@
+.burger-menu{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+
+    .layer{
+        height: 1.5px;
+        width: 18px;
+        background-color: #666;
+        border-radius: 100px;
+    }
+
+    .layer:nth-child(2){
+        margin: 5.5px 0;
+        width: 26px;
+    }
+}
+

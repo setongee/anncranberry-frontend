@@ -1,0 +1,83 @@
+.title-bar {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    height: 80px;
+
+    .title-name{
+        font-size: 14px;
+        font-weight: bold;
+        padding-left: 40px;
+    }
+
+    .area{
+        display : flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        height: 100%;
+    }
+
+    .area-1{
+        background-color: #F7EBF3;
+    }
+
+    .area-1, .area-2{
+        width: 46.5%;
+    }
+
+    .area-2, .area-3{
+
+        background-color: #fff;
+    }
+
+    .area-3{
+        width: 7%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-left: 1px solid rgba(153, 153, 153, 0.397);
+    }
+
+    .login-area{
+        display: flex;
+        align-items: center;
+    }
+
+    .logged-in{
+        display: flex;
+        align-items: center;
+
+        .user{
+            margin-right: 25px;
+        }
+    }
+
+    .sign{
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+
+        .search-icon{
+            height: 20px;
+            margin-right: 20px;
+        }
+    }
+   
+    &.loggedIn{ 
+
+        .area-1, .area-2, .area-3 {
+            background-color: transparent;
+        }
+    }
+}
+

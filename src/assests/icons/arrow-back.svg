@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="arrow-back" transform="translate(0.361 0.173)">
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="32" height="32" rx="16" transform="translate(-0.361 -0.173)"/>
+    <g id="arrow-back-2" data-name="arrow-back" transform="translate(11.729 11.795)">
+      <path id="Path_1" data-name="Path 1" d="M15.544,18H7.5" transform="translate(-7.5 -13.978)" fill="none" stroke="#f8f8f8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_2" data-name="Path 2" d="M22.022,7.5,18,11.522l4.022,4.022" transform="translate(-18 -7.5)" fill="none" stroke="#f8f8f8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

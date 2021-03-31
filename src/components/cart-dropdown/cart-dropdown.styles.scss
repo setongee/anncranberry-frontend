@@ -1,0 +1,100 @@
+.cart-dropdown {
+    position: absolute;
+    width: 300px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    top: 80px;
+    right: 0px;
+    z-index: 6;
+    overflow: hidden;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.07);
+
+
+  
+    .cart-items {
+      height: 450px;
+      overflow-y: scroll;
+      
+
+      .empty-message { 
+        font-size: 18px;
+        position: absolute;
+        width: 85%;
+        top: 35%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .illustration{
+          overflow: hidden;
+          width: 100%;
+
+          img{
+            width: 100%;
+          }
+        }
+
+        .info{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          span{
+            width: 80%;
+            text-align: center;
+            line-height: 20px;
+          }
+        }
+      }
+
+    }
+
+    .remove-scroll{
+      overflow-y: hidden;
+    }
+  
+    button {
+      margin-top: auto;
+    }
+
+
+    ::-webkit-scrollbar {
+        width: 2px;
+    }
+    
+    ::-webkit-scrollbar-track{
+        background: #f1f1f1;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: #999;
+    }
+
+  }
+
+  .data{
+
+    .name-quant {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h1{
+      font-size: 16px;
+    }
+
+    p{
+      margin-top: -5px;
+    }
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+
+}
+

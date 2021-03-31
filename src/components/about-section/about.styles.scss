@@ -1,0 +1,47 @@
+.about-section{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+
+    .welcome-msg{
+        width: 60%;
+        padding: 90px;
+        text-align: justify;
+
+        h1{
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        p{
+            margin: 40px 0;
+            line-height: 28px;
+        }
+
+        .signage{
+            h1{
+                font-size: 98px;
+                text-transform:unset;
+                font-family: crunchy;
+                font-weight: normal;
+            }
+
+            p{
+                margin-top: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .side-photo{
+        height: 100vh;
+        overflow: hidden;
+        width: 35%;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+

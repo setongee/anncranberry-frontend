@@ -1,0 +1,36 @@
+.dashboard{
+    display: flex;
+    position: relative;
+    height: 85.5vh;
+    margin-top: -30px;
+
+    .dashboard-left{
+        width: 74%;
+        padding: 2px 5px;
+    }
+
+    .dashboard-right{
+        width: 25%;
+        height: 100%;
+        position: absolute;
+        right: 0px;
+        top: 0%;
+        padding: 0 10px;
+    }
+
+    .left-design{
+        position: fixed;
+        z-index: -1;
+        left: -13%;
+        top: 0%;
+        width: 40%;
+    }
+
+    .right-design{
+        position: fixed;
+        z-index: -1;
+        right: -13%;
+        top: 0%;
+        width: 40%;
+    }
+}

@@ -1,0 +1,23 @@
+.quick-shopping {
+
+    h1{
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+
+    .headers{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    .shop-cards{
+        display: flex;
+        overflow-y: scroll;
+        height: 380px;
+        width: 100%;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+}

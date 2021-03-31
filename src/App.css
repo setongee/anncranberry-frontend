@@ -1,0 +1,29 @@
+body {
+
+    font-family: 'Mulish', sans-serif;
+    position: relative;
+    background-color: #fff
+}
+
+a{
+    text-decoration: none;
+    color:#000
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: hotpink;
+}

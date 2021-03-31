@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="113" height="113.311" viewBox="0 0 113 113.311">
+  <g id="academy" transform="translate(-1223.25 -202.439)">
+    <g id="Icon_feather-tv" data-name="Icon feather-tv" transform="translate(1221 200.5)">
+      <path id="Path_1090" data-name="Path 1090" d="M14.15,10.5h89.2A11.15,11.15,0,0,1,114.5,21.65V82.975a11.15,11.15,0,0,1-11.15,11.15H14.15A11.15,11.15,0,0,1,3,82.975V21.65A11.15,11.15,0,0,1,14.15,10.5Z" transform="translate(0 20.375)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_1091" data-name="Path 1091" d="M66.25,3,38.375,30.875,10.5,3" transform="translate(20.375)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <path id="Icon_feather-play" data-name="Icon feather-play" d="M7.5,4.5,28.111,17.75,7.5,31Z" transform="translate(1262.194 254.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

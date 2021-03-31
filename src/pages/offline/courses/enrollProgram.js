@@ -62,7 +62,7 @@ const PayButton = ({COURSE_DETAILS, currentUser, history}) => {
 
             if (response.status === "successful" ) {
 
-                axios.post('/api/sendmail', dataSubmit).then(() => console.log('Course Successfully paid for'))
+                axios.post('https://anncranberry-academy.herokuapp.com/api/sendmail', dataSubmit).then(() => console.log('Course Successfully paid for'))
                 coursePaid(currentUser.id, PayDetails.courseName).then(() => history.push('/courses/enrolled/offline/paySuccess'))   
             
             }

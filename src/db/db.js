@@ -55,16 +55,13 @@ export const createUserCourseData =  async (userData, firstname, lastname, enrol
         const {email} = userData;
         const course = enrolled
 
-        const dataSubmit = {
-            email : email,
-            message : `dear ${firstname} ${lastname} welcome to ann cranberry offline academy, we are glad to have you onboard`,
-            subject : 'WELCOME WITH &#128150; TO ANN CRANNBERRY ACADEMY!'
-        }
-
         const RegSubmit = {
             email : email,
-            message : `dear  welcome to ann cranberry offline academy, we are glad to have you onboard`,
-            subject : `WELCOME ${firstname} ${lastname} TO ANN CRANNBERRY ACADEMY!`
+            firstname : firstname,
+            subject : 'Successfull Course Registration',
+            lastname : lastname,
+            price : courseInfo.price,
+            course : course
         }
 
         try {
@@ -78,7 +75,6 @@ export const createUserCourseData =  async (userData, firstname, lastname, enrol
             })
             
             .then(() => {
-                axios.post('https://anncranberry-server.herokuapp.com/api/sendmail', dataSubmit);
                 axios.post('https://anncranberry-server.herokuapp.com/api/sendmail', RegSubmit);
             })
             
@@ -163,8 +159,11 @@ export const createUser =  async (userData, firstname, lastname) => {
 
         const RegSubmit = {
             email : email,
-            message : `dear  welcome to ann cranberry offline academy, we are glad to have you onboard`,
-            subject : `WELCOME ${firstname} ${lastname} TO ANN CRANNBERRY ACADEMY!`
+            firstname : firstname,
+            subject : 'Welcome on board to ann cranberry',
+            lastname : lastname,
+            price : "nothing to add",
+            course : "not resistered any yet"
         }
 
         try {

@@ -78,8 +78,8 @@ export const createUserCourseData =  async (userData, firstname, lastname, enrol
             })
             
             .then(() => {
-                axios.post('https://anncranberry-academy.herokuapp.com/api/sendmail', dataSubmit);
-                axios.post('https://anncranberry-academy.herokuapp.com/api/sendmail', RegSubmit);
+                axios.post('/api/sendmail', dataSubmit);
+                axios.post('/api/sendmail', RegSubmit);
             })
             
         } 
@@ -178,7 +178,7 @@ export const createUser =  async (userData, firstname, lastname) => {
             })
             
             .then(() => {
-                axios.post('https://anncranberry-academy.herokuapp.com/api/sendmail', RegSubmit);
+                axios.post('/api/sendmail', RegSubmit);
             })
             
         } 

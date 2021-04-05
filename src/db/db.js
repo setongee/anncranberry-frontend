@@ -2,6 +2,10 @@ import {firestore} from '../firebase/firebase.utils'
 import firebase from 'firebase/app'
 import axios from 'axios'
 
+//base_url
+
+const base_url = 'https://anncranberry-server.herokuapp.com'
+
 //Date Formats for db save
 
 const date = new Date()
@@ -24,6 +28,15 @@ export const updateUserEnrolled = async (uid, course, courseInfo) => {
         const enrolledCourse = { course : course, paid : false, dateRegistered : dateSave.date, courseInfo : courseInfo }
         
         const may = snapshot.data().course.offline.find( yup => yup.course === course )
+
+        const RegSubmit = {
+            email : snapshot.data().email,
+            firstname : snapshot.data().firstname,
+            subject : 'Successfull Course Registration',
+            lastname : snapshot.data().lastname,
+            price : courseInfo.price,
+            course : course
+        }
        
 
         if (!may) {
@@ -34,6 +47,8 @@ export const updateUserEnrolled = async (uid, course, courseInfo) => {
     
                     'course.offline' : firebase.firestore.FieldValue.arrayUnion(enrolledCourse)
                 })
+
+                axios.post('https://anncranberry-server.herokuapp.com/api/sendmail', RegSubmit);
     
             } catch (error) {
                 console.error (error.message)
@@ -55,6 +70,7 @@ export const createUserCourseData =  async (userData, firstname, lastname, enrol
         const {email} = userData;
         const course = enrolled
 
+
         const RegSubmit = {
             email : email,
             firstname : firstname,
@@ -75,7 +91,7 @@ export const createUserCourseData =  async (userData, firstname, lastname, enrol
             })
             
             .then(() => {
-                axios.post('https://anncranberry-server.herokuapp.com/api/sendmail', RegSubmit);
+                axios.post(`${base_url}/api/sendmail`, RegSubmit);
             })
             
         } 
@@ -97,6 +113,15 @@ export const deleteCourseData = async ( uid, course ) => {
     if ( snapshot.exists ) {
         
         const element = snapshot.data().course.offline.find( coursedata => coursedata.course === course.course )
+
+        const RegSubmit = {
+            email : snapshot.data().email,
+            firstname : snapshot.data().firstname,
+            subject : 'COURSE DELETED SUCCESSFULLY',
+            lastname : snapshot.data().lastname,
+            price : "null",
+            course : course
+        }
        
         try{
 
@@ -104,6 +129,8 @@ export const deleteCourseData = async ( uid, course ) => {
 
                 'course.offline' : firebase.firestore.FieldValue.arrayRemove(element)
             })
+
+            axios.post('https://anncranberry-server.herokuapp.com/api/sendmail', RegSubmit);
 
         } catch (error) {
             console.error (error.message)
@@ -125,6 +152,7 @@ export const coursePaid = async (uid, course) => {
         const UpdateData = {...formerData, paid : true}
 
         console.log(formerData, UpdateData)
+        
 
         try{
 
@@ -160,10 +188,10 @@ export const createUser =  async (userData, firstname, lastname) => {
         const RegSubmit = {
             email : email,
             firstname : firstname,
-            subject : 'Welcome on board to ann cranberry',
+            subject : 'Successfull Course Registration',
             lastname : lastname,
-            price : "nothing to add",
-            course : "not resistered any yet"
+            price : "N0.00",
+            course : "Not Registered Yet!!!"
         }
 
         try {
@@ -177,7 +205,7 @@ export const createUser =  async (userData, firstname, lastname) => {
             })
             
             .then(() => {
-                axios.post('https://anncranberry-server.herokuapp.com/api/sendmail', RegSubmit);
+                axios.post(`${base_url}/api/sendmail`, RegSubmit);
             })
             
         } 

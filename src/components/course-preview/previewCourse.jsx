@@ -79,7 +79,7 @@ class PreviewCourse extends React.Component {
 
         const {history, selectedItem, showLogin, showRegister, currentUser } = this.state
 
-        const {thumb, title, price, what_to_learn, src} = selectedItem
+        const {thumb, title, what_to_learn, src, sub} = selectedItem
 
         return (
 
@@ -98,16 +98,25 @@ class PreviewCourse extends React.Component {
                         </div>
 
                         <div className="fullSubtitle">
-                           {price} sit amet consectetur, adipisicing elit. Et aliquid atque vitae id earum laudantium praesentium, in impedit, molestias aperiam, a quo soluta. Nemo saepe repellat cum quaerat neque. Non.
+                           {sub}
                         </div>
 
-                        <div className="what_to_learn">
-                            {
-                                what_to_learn.map((learn, index) => (
-                                    <li key = {index} > <Check style = {{marginRight : '10px', height : '18px', color : '#666'}}/> {learn}</li>
-                                ))
-                            }
-                        </div>
+                        {
+                            what_to_learn.length ?
+                                (<div className="what_to_learn">
+
+                                    <div className="learn_what">What you will learn : </div>
+
+                                    {
+                                        what_to_learn.map((learn, index) => (
+                                            <li key = {index} > <Check style = {{marginRight : '10px', height : '18px', color : '#666'}}/> {learn}</li>
+                                        ))
+                                    }
+
+                                </div>) : null
+
+                        }
+
 
                     </div>
                     

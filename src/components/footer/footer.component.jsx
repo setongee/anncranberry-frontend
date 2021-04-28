@@ -14,7 +14,7 @@ const Footer = () => {
 
             <div className="company"><h1>ANN CRANBERRY</h1></div>
             <div className="footer-body">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem deserunt eaque neque soluta ipsam. Voluptatibus quod voluptatum deserunt, maiores qui, illum quasi dolores dolor iure assumenda magni laboriosam culpa! Maiores minus nulla soluta laudantium perspiciatis fuga ea nihil labore dolor porro. Tenetur veritatis voluptates quisquam consequuntur aperiam, eligendi expedita officia non nesciunt sapiente laboriosam atque molestias asperiores harum ad cumque fugit corporis itaque, ullam hic velit, ipsam iure! Doloremque placeat, eius sed quaerat ea veniam, voluptates voluptatum at exercitationem architecto inventore dicta consectetur maiores! Quam consequatur est quas, provident modi, a inventore voluptates hic quisquam corporis corruptiyhi nam.</p>
+                <p>AnnCranberry is a fashion enterprise that is made up of AnnCranberry Couture and AnnCranberry Fashion Academy. AnnCranberry Couture is a female clothing brand dedicated to providing top-notch couture dresses; formal wear, dinner dresses, ready to wear outfits and wedding dresses. AnnCranberry Fashion Academy is dedicated to educating and empowering individuals to be fashion business owners.</p>
             </div>
 
             <div className="footer-end">

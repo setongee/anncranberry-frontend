@@ -2,8 +2,6 @@ import React from 'react';
 
 const CardHandle = ({course, history, match, id}) => {
 
-    console.log(course)
-
     return (
 
         <div className="card">

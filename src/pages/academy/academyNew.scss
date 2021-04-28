@@ -105,7 +105,7 @@
                 font-size: 13px;
                 line-height: 20px;
                 text-align: center;
-                width: 60%;
+                width: 70%;
                 margin: 30px 0;
                 color: #555;
             }
@@ -130,6 +130,8 @@
                 cursor: pointer;
                 outline: none;
                 transition: all .3s ease-in-out;
+                position: absolute;
+                bottom: 10%;
     
                 &:hover{
     

@@ -47,7 +47,7 @@ class Academy extends React.Component {
                <div className={`choose_type ${this.state.hide ? "hide" : '' }`}>
                    
                    <ChooseType closeModal = {this.closeModal} close = {true} state = {this.state} title = 'offline' subtitle = 'All courses will be done onsite in a physical venue with close monitoring and active mentorship of a tutor.' />
-                   <ChooseType closeModal = {this.closeModal} close = {false} state = {this.state} title = 'online' subtitle = 'All courses will be done onsite in a physical venue with close monitoring and active mentorship of a tutor.' />
+                   <ChooseType closeModal = {this.closeModal} close = {false} state = {this.state} title = 'online' subtitle = 'All courses will be done virtually via a closed WhatsApp group. All participants will have direct access to tutors to enable close monitoring and mentorship.' />
 
                </div>
             

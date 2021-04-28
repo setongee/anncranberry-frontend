@@ -25,7 +25,7 @@ const ChooseLevel = ({ history, match, addProgram }) => {
 
                         <div className="level_title">Basic</div>
                         
-                        <div className="level_description"> The courses offered here are for students who are have little or no knowledge of fashoion design  </div> 
+                        <div className="level_description"> The basic training course is designed for students who have little or no knowledge of dress making and fashion design.  </div> 
                         
                         <button onClick = { () => { 
 
@@ -43,7 +43,7 @@ const ChooseLevel = ({ history, match, addProgram }) => {
                     <div className="detail_holder">
                         
                         <div className="level_title">Advanced</div>
-                        <div className="level_description"> The courses offered here are for students who are have little or no knowledge of fashoion design  </div> 
+                        <div className="level_description"> The  advanced training course is designed for students with basic level knowledge of dress making and fashion design.</div> 
                         
                         <button onClick = {()=> {
 
@@ -62,7 +62,7 @@ const ChooseLevel = ({ history, match, addProgram }) => {
                     <div className="detail_holder">
                         
                         <div className="level_title">Bridal</div>
-                        <div className="level_description"> The courses offered here are for students who are have little or no knowledge of fashoion design  </div> 
+                        <div className="level_description"> The bridal course is designed for students who have gone through basic and intermediate training in fashion design.</div> 
                         
                         <button onClick = {()=> {
 

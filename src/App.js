@@ -6,11 +6,12 @@ import { connect } from 'react-redux'
 
 //Pages
 import HomePage from './pages/homepage/homepage.component'
-import Shop from './pages/shop/shop.component'
-import CheckoutPage from './pages/checkout/checkout.component';
-import AboutPage from './pages/about/about.page';
-import CollectionsPage from './pages/collections/collections.page'
+//import Shop from './pages/shop/shop.component'
+//import CheckoutPage from './pages/checkout/checkout.component';
+//import AboutPage from './pages/about/about.page';
+//import CollectionsPage from './pages/collections/collections.page'
 import Academy from './pages/academy/academy'
+import Contact from './pages/contact/contact'
 
 //academy pages
 import CourseView from './components/academy_components/academy_course'
@@ -84,13 +85,17 @@ class App extends React.Component {
   
             <Route exact path='/' render = { () => currentUser ? (<Redirect to = '/account/offline/dashboard' />) : (<HomePage/>) } />
             <Route exact path='/home' render = { () => (<HomePage/>) } />
-            <Route path='/shop' component = {Shop} />
-            <Route exact path='/signin' render = { () => currentUser ? (<Redirect to = '/account/offline/dashboard' />) : (<Auth/>) }/>
+            {/* <Route path='/shop' component = {Shop} />
             <Route exact path = '/checkout' component = {CheckoutPage} />
             <Route exact path = '/about' component = {AboutPage} />
-            <Route exact path = '/collections' component = {CollectionsPage} />
+            <Route exact path = '/collections' component = {CollectionsPage} /> */}
+
+            <Route exact path = '/contact' component = {Contact} />
            
+            <Route exact path='/signin' render = { () => currentUser ? (<Redirect to = '/account/offline/dashboard' />) : (<Auth/>) }/>
+            
             <Route exact path = '/academy' component = {Academy} />
+
             <Route path = '/academy/offline/courses' component = {CourseView} />
 
             <Route exact path = '/courses/enrolled/offline' render = { () => currentUser ? (<EnrolledPage user = {currentUser} />) : (<Auth />) } />
